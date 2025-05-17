@@ -1,5 +1,7 @@
 -- Netflix Data Analysis using SQL
+
 -- Solutions of 15 business problems
+
 -- 1. Count the number of Movies vs TV Shows
 
 SELECT type,COUNT(*)
@@ -133,7 +135,6 @@ the description field. Label content containing these keywords as 'Bad' and all 
 content as 'Good'. Count how many items fall into each category.
 */
 
-
 SELECT 
     category,
 	TYPE,
@@ -149,9 +150,3 @@ FROM (
 ) AS categorized_content
 GROUP BY 1,2
 ORDER BY 2
-
-
-
-
--- End of reports
-
